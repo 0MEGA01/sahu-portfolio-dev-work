@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio">
+    <title>Soumya Sahu |</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="icon" href="Omega.ico" type="image/ico">
+</head>
+<body>
+    <div class="card">
+        <svg 
+            viewBox="0 0 100 100"
+            xmlns='http://www.w3.org/2000/svg'
+            class="noise"
+        >
+            <filter id='noiseFilter'>
+                <feTurbulence 
+                    type='fractalNoise' 
+                    baseFrequency='0.85' 
+                    numOctaves='6' 
+                    stitchTiles='stitch' 
+                />
+            </filter>
+            <rect
+                width='200%'
+                height='100%'
+                preserveAspectRatio="xMidYMid meet"
+                filter='url(#noiseFilter)' 
+            />
+        </svg>
+        <div class="content">
+            <h1>PORTFOLIO WORK UNDER PROGRESS</h1>
+            <p>Hi, I'm Soumya Sahu, a passionate Developer with a keen interest in Java Development. My portfolio is currently under active development, where I aim to showcase my skills in building dynamic and engaging web applications.</p>
+            <br>
+            <p>Stay tuned for updates as I continue to refine and enhance my work. Feel free to connect with me through this space as I build and share my journey in the tech world.</p>
+        </div>
+    </div>
+    <div class="gradient-bg">
+        <svg 
+            viewBox="0 0 100vw 100vw"
+            xmlns='http://www.w3.org/2000/svg'
+            class="noiseBg"
+        >
+            <filter id='noiseFilterBg'>
+                <feTurbulence 
+                    type='fractalNoise'
+                    baseFrequency='0.6'
+                    stitchTiles='stitch' 
+                />
+            </filter>
+            <rect
+                width='100%'
+                height='100%'
+                preserveAspectRatio="xMidYMid meet"
+                filter='url(#noiseFilterBg)' 
+            />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="svgBlur">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive"></div>
+        </div>
+    </div>
+    
+<!-- Social Media Footer Box -->
+<div class="footer-box">
+    <div class="social-card">
+        <a href="https://www.linkedin.com/in/soumya-sahu01/" target="_blank">
+            <img src="LinkedIn Icon.svg" alt="LinkedIn" class="social-icon">
+            LinkedIn
+        </a>
+    </div>
+    <div class="social-card">
+        <a href="https://github.com/0MEGA01" target="_blank">
+            <img src="Github Icon.svg" alt="GitHub" class="social-icon">
+            GitHub
+        </a>
+    </div>
+</div>
+<script src="Portfolio.js"></script>
+</body>
+</html>
